@@ -39,7 +39,7 @@
 				aria-describedby="urlInput" placeholder="Enter full URL">
 		</div>
 		<div class="form-group">
-			<label for="shortURl">Short URL:</label> <input type="text" class="form-control" id="shortURl">
+			<label for="shortURl">Short URL:</label> <input type="text" class="form-control" id="shortURl" disabled>
 		</div>
 		<div style="text-align:center">
 				  <button  class="btn btn-primary" type="button" id="suv" >Submit</button>

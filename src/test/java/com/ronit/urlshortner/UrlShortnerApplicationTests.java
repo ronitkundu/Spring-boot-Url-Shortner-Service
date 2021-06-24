@@ -59,13 +59,13 @@ class UrlShortnerApplicationTests {
 		@Autowired
         private MockMvc mockMvc;
    
-   @Before
-   public void init() {
-       MockitoAnnotations.initMocks(this);
-       
-   }
+	   @Before
+	   public void init() {
+	       MockitoAnnotations.initMocks(this);
+	       
+	   }
 	@Test
-	@DisplayName("Test is used to check if all the short urls are getting fetched from Shortened table  ")
+	@DisplayName("Test 1 is used to check if all the short urls are getting fetched from Shortened table  ")
 	public void getAllUrl() throws MalformedURLException {
 		MockHttpServletRequest request = new MockHttpServletRequest();
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
@@ -91,7 +91,7 @@ class UrlShortnerApplicationTests {
 	}
 	
 	@Test
-	@DisplayName("Test getShortenUrl function with different conditions  ")
+	@DisplayName("Test 2 getShortenUrl function with different conditions  ")
 	public void getShortenUrlTest() throws MalformedURLException, URISyntaxException {
 		MockHttpServletRequest request = new MockHttpServletRequest();
         RequestContextHolder.setRequestAttributes(new ServletRequestAttributes(request));
